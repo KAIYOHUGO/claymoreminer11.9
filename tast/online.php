@@ -4,13 +4,10 @@ if(isset($_REQUEST['ip'])){
     $ip=$_REQUEST['ip'];
     $ping=file_get_contents($ip);
     if(!empty($ping)){
-        $json=
+        $json=['ctt'=>$ping];
     }else{
-
+        $json=['ecd'=>'100']
     }
-}else{
-    echo 'api error : ip not set';
-}
 
 
 ?>
