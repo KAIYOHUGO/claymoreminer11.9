@@ -1,11 +1,12 @@
 <?php
-$json=[]
+$json=[];
 if(isset($_REQUEST['ip'])){
     $ip=$_REQUEST['ip'];
     $ping=file_get_contents($ip);
 }elseif(!empty($ping)){
         $json=['ctt'=>$ping];
 }else {
-    $json=['ecd'=>'100];
+    $json=['ecd'=>'100'];
 }
+echo json_encode($json);
 ?>
