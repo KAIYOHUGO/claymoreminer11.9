@@ -6,7 +6,7 @@ if(isset($_REQUEST['ip'])){
     if(!empty($ping)){
         $json=['ctt'=>$ping];
     }else{
-        $json=['ecd'=>'100']
+        $json=['ecd'=>'100'];
     }
 
 
